@@ -1,22 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('imageForm');
-    const imageInput = document.getElementById('imageInput');
-    const submitBtn = document.getElementById('submitBtn');
-    const resultDiv = document.getElementById('result');
+const file = document.getElementById("example").files[0];
 
-    submitBtn.addEventListener('click', function () {
-        const formData = new FormData(form);
-
-        fetch('/upload', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.text())
-        .then(message => {
-            resultDiv.textContent = message;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    });
-});
+fetch(送信先のURL, { method: "POST", body: formData });
