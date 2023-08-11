@@ -7,9 +7,14 @@
 </head>
 <body>
 
-    <p><button name="button">録画開始</button></p><br>
-
-    <form method="post">
+    <p><button name="button">録画開始</button></p>
+<p>
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="avatar">
+  <button type="submit">送信する</button>
+</form>
+</p>
+   <form method="post">
     	<div>
     		<label for="kyu">あなたの現在の級</label>
     		<select name="kyu">
@@ -22,6 +27,6 @@
     	</div>
     </form>
 
-
+    <input type="submit" value="送信">
 </body>
 </html>
