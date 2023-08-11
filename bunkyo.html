@@ -6,17 +6,24 @@
     <title>採点フォーム</title>
 </head>
 <body>
-
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">サービス紹介</a></li>
+      <li><a href="#">最新情報</a></li>
+      <li><a href="#">ブログ</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
     <p><button name="button">録画開始</button></p>
 <p>
 <form method="post" enctype="multipart/form-data">
   <input type="file" name="avatar">
-  <button type="submit">送信する</button>
 </form>
 </p>
    <form method="post">
     	<div>
-    		<label for="kyu">あなたの現在の級</label>
+    		<label for="kyu">あなたの現在の級：</label>
     		<select name="kyu">
     		<option value="">選択してください</option>
     		<option value="エントリー">エントリー</option>
@@ -27,6 +34,6 @@
     	</div>
     </form>
 
-    <input type="submit" value="送信">
+    <br><input type="submit" value="送信">
 </body>
 </html>
