@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>サンプルHTML</h1>
+
+<p><button name="button">録画開始</button></p>
+<p>
+
+
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file">
+        <button type="submit">アップロード</button>
+    </form>
+    
+    <h2>アップロードされた画像:</h2>
+    <ul>
+        {% for filename in uploaded_files %}
+        <li>
+            {{ filename }}
+            <a href="/delete/{{ filename }}">削除</a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    
+</body>
+</html>
