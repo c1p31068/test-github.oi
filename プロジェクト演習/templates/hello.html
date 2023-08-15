@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="hello.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js">
+    </script>
 </head>
 <body>
 <h1>サンプルHTML</h1>
 
-<p><button name="button">録画開始</button></p>
-<p>
-
+<p><button name="button">録画開始</button>
+</p>
 
     <form method="post" enctype="multipart/form-data" action="/upload">
         <input type="file" name="file">
         <button type="submit">アップロード</button>
     </form>
-    
+
     <h2>アップロードされた画像:</h2>
     <ul>
         {% for filename in uploaded_files %}
@@ -26,7 +29,7 @@
         </li>
         {% endfor %}
     </ul>
-    
-    
+
+
 </body>
 </html>
