@@ -9,7 +9,12 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+
 @app.route("/")
+def index():
+    return render_template("chiha.html")
+
+@app.route("/hello", methods=["GET"]) 
 def hello_world():
     uploaded_files = os.listdir(app.config['UPLOAD_FOLDER'])
     return render_template('hello.html', uploaded_files=uploaded_files)
