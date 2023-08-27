@@ -3,3 +3,27 @@ h1{
   color: red;
   font-style: italic;
 }
+div{
+  border: 1px solid #333;
+}
+.face-photo,.student-info,.comment{
+  display: flex;
+}
+.test,.test-detail,.comment{
+  display: flex;
+}
+.face-photo{
+  background-color: green;
+}
+.student-info{
+  background-color: red;
+}
+.comment{
+
+}
+.test{
+
+}
+.test-detail{
+
+}
