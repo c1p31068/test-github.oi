@@ -6,25 +6,54 @@ h1{
 div{
   border: 1px solid #333;
 }
-.face-photo,.student-info,.comment{
+#left{
+  width: 64%;
+  height: auto;
+  float: left;
+}
+#right{
+  width: 36%;
+  height: auto;
+  float: right;
+}
+#top{
+  width: auto;
+  height: 300px;
+  padding: 1%;
   display: flex;
 }
-.test,.test-detail,.comment{
-  display: flex;
+#bottom{
+  width: auto;
+  height: 500px;
+  padding: 1%;
 }
+.top-l{
+  display: flex;
+  height: 60%;
+}
+
+
 .face-photo{
   background-color: green;
-
+  width: 25%;
+  height: auto;
 }
 .student-info{
   background-color: red;
+  width: 75%;
+  height: auto;
 }
 .comment{
-
+  width: auto;
+  height: auto;
 }
 .test{
-
+  background-color: blue;
+  width: auto;
+  height: auto;
+  height: 39%
 }
 .test-detail{
-
+  width: auto;
+  height: auto;
 }
