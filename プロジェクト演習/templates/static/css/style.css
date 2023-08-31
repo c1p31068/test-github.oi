@@ -11,6 +11,11 @@ div{
   height: auto;
   float: left;
 }
+#left2{
+  width: 85%;
+  height: auto;
+  float: left;
+}
 #right{
   width: 36%;
   height: auto;
@@ -18,13 +23,24 @@ div{
 }
 #top{
   width: auto;
-  height: 300px;
+  height: 200px;
+  padding: 1%;
+  display: flex;
+}
+#top2{
+  width: auto;
+  height: 400px;
   padding: 1%;
   display: flex;
 }
 #bottom{
   width: auto;
-  height: 500px;
+  height: auto;
+  padding: 1%;
+}
+#bottom{
+  width: auto;
+  height: auto;
   padding: 1%;
 }
 .top-l{
@@ -32,18 +48,17 @@ div{
   height: 60%;
 }
 
-
 .face-photo{
   background-color: green;
-  width: 25%;
+  width: 13%;
   height: auto;
 }
 .student-info{
   background-color: red;
-  width: 75%;
+  width: 87%;
   height: auto;
 }
-.comment{
+.comment,.graph{
   width: auto;
   height: auto;
 }
@@ -55,5 +70,28 @@ div{
 }
 .test-detail{
   width: auto;
-  height: auto;
+  height: 500px;
+}
+.video{
+  width: auto;
+  height: 59%;
+  display: flex;
+}
+.test-info{
+  width: auto;
+  height: 27%;
+}
+.percent{
+  width: auto;
+  height: 13%;
+}
+.SA-video{
+  width: 50%;
+}
+.A-video{
+  width: 50%;
+}
+.feedback{
+  width: auto;
+  height: 130px;
 }
