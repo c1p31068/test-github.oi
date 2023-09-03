@@ -1,14 +1,144 @@
 h1{
-    color: rgb(0, 255, 221);
+    color: rgb(215, 22, 22);
 }
 
 h1.tutiya {
     color:#e89c22;
-  }
-
-  h1.tutiya  {
+  
     margin : 30px ;
     padding : 20px ;
     border : 5px solid rgb(0, 43, 128) ;
     background-color : lightgreen ;
+    padding-left: 300px;
+    
+}
+
+
+#totoko{
+ 
+  width:1400px;
+  padding:20px 60px;
+}
+
+#oss{
+  
+  padding-left: 670px;
+  margin: 50px;
+  
+  
+
+}
+
+
+.small-image {
+  width: 360px; /* 任意の幅 */
+  height: auto;
+  padding-left: 120px;
+  
+}
+
+.f4f{
+  
+  padding-left: 20px;
+
+}
+
+.heading-022 {
+  padding: .5em .7em;
+  border-left: 5px solid #2589d0;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.heading-008 {
+  display: inline-block;
+  position: relative;
+  padding: .5em .7em;
+  border-radius: 50px 0 0 50px;
+  padding-left: 20px;
+  background-color: #ec7d22;
+  color: #fff;
+  margin-left: 30px; /* 任意のマージン */
+}
+
+.heading-008::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+
+.box-020 {
+  position: relative;
+  max-width: 600px;
+  padding-right: 300px;
+  margin: 30px;
+  padding: 1em 1.5em;
+  background-color: #e0efff;
+  color: #333;
+  margin-top:100px;
+}
+
+.box-020::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: #c0cfdf #fff;
+  box-shadow: -1px 1px 1px rgb(0 0 0 / 5%);
+  content: '';
+}
+
+
+.qa{
+  
+  position: relative;
+  max-width: 600px;
+  margin: 30px;
+  left: 800px;
+  top: -300px;
+ 
+
+}
+
+
+
+/*
+h1{
+  font-size: 39px;
+  color: red;
+  font-style: italic;
+}
+div{
+  border: 1px solid #333;
+}
+#left{
+  width: 64%;
+  height: auto;
+  float: left;
+}
+#right{
+  width: 36%;
+  height: auto;
+  float: right;
+}
+#top{
+  width: auto;
+  height: 300px;
+  padding: 1%;
+  display: flex;
+}
+#bottom{
+  width: auto;
+  height: 500px;
+  padding: 1%;
+}
+.top-l{
+  display: flex;
+  height: 60%;
 }
