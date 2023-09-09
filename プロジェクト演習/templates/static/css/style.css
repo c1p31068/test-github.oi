@@ -4,7 +4,6 @@ h1{
   font-style: italic;
 }
 div{
-  border: 1px solid #333;
 }
 #left{
   width: 64%;
@@ -43,9 +42,7 @@ div{
   width: auto;
   height: auto;
   padding: 1%;
-  animation-name: bgcolor;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation: bgcolor 10s infinite;
 }
 @keyframes bgcolor {
     0% {background-color: #AEFFBD}
@@ -131,4 +128,11 @@ td{
 }
 input{
   margin-left: 4px;
+}
+.qa{
+  width: 100%;
+  margin: 2px;
+}
+.submit{
+  float: right;
 }

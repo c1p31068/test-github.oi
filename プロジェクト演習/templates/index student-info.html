@@ -43,9 +43,21 @@
     </table>
 </div>
 <div id="right">
-    <input type="text" name="free"
-           style="width: 100%; height: 100%;"
-           size="15" placeholder="自由欄＜コメント欄＞"/>
+  <div class = "qa">
+        <form method="POST" action="/submit_response">
+            <label for="name">名前:</label>
+            <input type="text" name="name" required><br>
+            <label for="answer">回答:</label>
+            <textarea name="comment_content" rows="8" cols="65"></textarea><br>
+
+            <input class="submit" type="submit" value="送信">
+        </form>
+        <ul>
+            {% for response in responses %}
+                <li><strong>{{ response[1] }}:</strong> {{ response[2] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 </div>
 <div id="bottom">
