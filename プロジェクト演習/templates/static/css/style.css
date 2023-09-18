@@ -58,7 +58,6 @@ div{
   display: flex;
 }
 #bottom{
-  background: linear-gradient(185deg, lightyellow, lightgreen);
   width: auto;
   height: auto;
   padding: 1%;
@@ -118,6 +117,7 @@ div{
   width: auto;
   height: 500px;
   border: 1px solid #333;
+  background: linear-gradient(185deg, lightyellow, lightgreen);
 }
 .video{
   width: auto;
