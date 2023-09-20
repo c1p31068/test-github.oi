@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>回答一覧</title>
+ </head>
+ <body>
+     <h1>回答一覧</h1>
+     <ul>
+         {% for response in responses %}
+            <li><strong>{{ response[1] }}:</strong> {{ response[2] }}</li>
+        {% endfor %}
+     </ul>
+
+
+     <h2>トップページへ移動</h2>
+    <form action="/" method="get">
+        <button input type="submit" class="btn btn-secondary">トップページに戻る</button>
+       
+      </form>
+ </body>
+ </html>

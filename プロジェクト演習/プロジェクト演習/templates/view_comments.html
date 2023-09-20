@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Comments</title>
+</head>
+<body>
+    <h1>View Comments</h1>
+    <ul>
+        {% for comment in comments %}
+        <li>{{ comment[1] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
+
+
+
+
